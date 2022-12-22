@@ -1,0 +1,57 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Helvetica";
+    margin: 1rem;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: repeat(3, 5rem);
+    grid-template-rows: repeat(3, 5rem);
+    gap: 1rem;
+    margin: 3rem auto;
+}
+
+.case{
+    border: 1px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    background-color: rgba(220,220,220, 0.7);
+}
+
+h2{
+    color: green;
+}
+
+#turnindicX{
+    font-size: 3rem;
+    color: red;
+    text-align: center;
+    display: table;
+    margin: 0 auto;
+}
+
+#turnindicO{
+    font-size: 3rem;
+    color: blue;
+    text-align: center;
+    display: table;
+    margin: 0 auto;
+}
+
+#victorymessage{
+    font-size: 1rem;
+}
+
+.locked{
+    cursor: not-allowed
+}
+
+
