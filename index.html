@@ -9,6 +9,22 @@
 </head>
 <body>
     <h1>Tic Tac Toe</h1>
+    <p id="diffTitle">Choisis une difficulté de jeu</p>
+    <div id="chooseDiff">
+        <button onclick="showGame('easy')" id="easy">Facile</button>
+        <button onclick="showGame('normal')" id="normal">Normal</button>
+        <button onclick="showGame('hard')" id="hard">Hardcore</button>
+    </div>
+    <p id="whoBeginTitle">Qui commence la partie ?</p>
+    <div id="whoBegin">
+        <button onclick="changeFirstPlayer(1)" id="whobeginX">X</button>
+        <button onclick="changeFirstPlayer(2)" id="whobeginO">O</button>
+    </div>
+    <p id="sizeTitle">Taille de la grille de jeu</p>
+    <div id="sizeChange">
+        <button onclick="changeGridSize(3)" id="size3">3x3</button>
+        <button onclick="changeGridSize(4)" id="size4">4x4</button>
+    </div>
     <div id="grid">
         <div id="0" class="case"></div>
         <div id="1" class="case"></div>
@@ -20,8 +36,27 @@
         <div id="7" class="case"></div>
         <div id="8" class="case"></div>
     </div>
-    <p id="tourjoueur"></p>
-    <button onclick="clearGame()">Reset la partie</button>
+
+    <div id="grid4x4">
+        <div id="9" class="case"></div>
+        <div id="10" class="case"></div>
+        <div id="11" class="case"></div>
+        <div id="12" class="case"></div>
+        <div id="13" class="case"></div>
+        <div id="14" class="case"></div>
+        <div id="15" class="case"></div>
+        <div id="16" class="case"></div>
+        <div id="17" class="case"></div>
+        <div id="18" class="case"></div>
+        <div id="19" class="case"></div>
+        <div id="20" class="case"></div>
+        <div id="21" class="case"></div>
+        <div id="22" class="case"></div>
+        <div id="23" class="case"></div>
+        <div id="24" class="case"></div>
+    </div>
+
+    <button onclick="clearGame()" id="resetBtn">Reset la partie</button>
     <h2 id="victorymessage"></h2>
     <script src="script.js"></script>
 </body>

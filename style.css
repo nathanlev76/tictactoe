@@ -1,3 +1,19 @@
+*{
+    font-family: Roboto;
+}
+
+h1{
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 42px magenta,
+      0 0 82px magenta,
+      0 0 92px magenta,
+      0 0 102px magenta,
+      0 0 151px magenta;
+}
+
 body{
     display: flex;
     justify-content: center;
@@ -5,25 +21,36 @@ body{
     flex-direction: column;
     font-family: "Helvetica";
     margin: 1rem;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #grid{
     display: grid;
     grid-template-columns: repeat(3, 5rem);
     grid-template-rows: repeat(3, 5rem);
-    gap: 1rem;
+    gap: 0.7rem;
+    margin: 3rem auto;
+}
+#grid4x4{
+    display: grid;
+    grid-template-columns: repeat(4, 5rem);
+    grid-template-rows: repeat(4, 5rem);
+    gap: 0.7rem;
     margin: 3rem auto;
 }
 
 .case{
-    border: 1px solid grey;
+    border: 1px solid white;
     border-radius: 5px;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 3rem;
-    background-color: rgba(220,220,220, 0.7);
+    font-weight: 600;
+    user-select: none;
 }
 
 h2{
@@ -47,11 +74,79 @@ h2{
 }
 
 #victorymessage{
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 .locked{
     cursor: not-allowed
 }
 
+#resetBtn{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
 
+#resetBtn:hover{
+    transform: scale(1.03);
+    transition: all 0.4s ease;
+}
+
+#chooseDiff{
+    display: flex;
+}
+
+
+#easy{
+    background-color: transparent;
+    border: 1px solid greenyellow;
+    padding: 15px;
+    color: greenyellow;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 110%;
+}
+
+
+#normal{
+    background-color: transparent;
+    border: 1px solid yellow;
+    padding: 15px;
+    color: yellow;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 110%;
+}
+
+#hard{
+    background-color: transparent;
+    border: 1px solid red;
+    padding: 15px;
+    color: red;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 110%;
+}
+
+#diffTitle, #whoBeginTitle, #sizeTitle{
+    color: white;
+    font-size: 110%;
+}
+
+#whobeginX, #size3{
+    background-color: rgba(255, 0, 0, 0.4);
+    color: red;
+    border-color: white;
+    padding: 1.5em;
+    cursor: pointer;
+}
+
+#whobeginO, #size4{
+    background-color: rgba(0, 0, 255, 0.4);
+    color: blue;
+    padding: 1.5em;
+    cursor: pointer;
+}
